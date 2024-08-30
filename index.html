@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dash</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+      integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/utils.js" defer></script>
+    <script src="./js/classes.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="dash">
+      <div class="game-stats">
+        <!-- player health -->
+        <div class="player-health">
+          <div class="current"></div>
+        </div>
+        <!-- timer -->
+        <div class="timer">10</div>
+        <!-- enemy health -->
+        <div class="enemy-health">
+          <div class="current"></div>
+        </div>
+      </div>
+      <div class="game-outcome"></div>
+      <canvas></canvas>
+      <audio id="bg-song" src="./assets/fight-song.mp3" loop></audio>
+    </div>
+    <div tabindex="0" id="sound-control">
+      <img
+        width="40"
+        height="40"
+        src="./assets/play-circle-svgrepo-com.svg"
+        alt="play sound"
+      />
+    </div>
+  </body>
+</html>
