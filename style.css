@@ -92,3 +92,39 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.start-game-wrapper {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-image: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 0.291) 0%,
+    rgba(9, 9, 121, 0.427) 0%,
+    rgba(0, 213, 255, 0.425) 100%
+  );
+}
+
+.start-game-wrapper button {
+  background-color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.start-game-wrapper button:hover,
+.start-game-wrapper button:focus {
+  background-color: #a1abff;
+  border: 2px solid hsl(220, 100%, 55%);
+  color: #fff;
+  outline: none;
+}
+
+.hide {
+  display: none !important;
+}

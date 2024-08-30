@@ -17,6 +17,10 @@ function determineWinner({ player, enemy }) {
   if (timerId) clearTimeout(timerId);
   if (!isGameOver) {
     isGameOver = true;
+    setTimeout(() => {
+      document.querySelector(".start-game-wrapper").classList.remove("hide");
+      window.location.reload();
+    }, 5000);
   }
   document.querySelector(".game-outcome").classList.add("active");
   if (player.health === enemy.health) {
