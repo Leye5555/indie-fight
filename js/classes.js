@@ -89,7 +89,6 @@ class Fighter extends Sprite {
       sprites[spriteKey].image = new Image();
       sprites[spriteKey].image.src = sprites[spriteKey].imageSrc;
     }
-    console.log({ sprites });
   }
 
   //   draw() {
